@@ -1,0 +1,728 @@
+{
+ "nodes": {
+  "node-red": {
+   "name": "node-red",
+   "version": "0.19.1",
+   "local": false,
+   "nodes": {
+    "sentiment": {
+     "name": "sentiment",
+     "types": [
+      "sentiment"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/analysis/72-sentiment.js"
+    },
+    "inject": {
+     "name": "inject",
+     "types": [
+      "inject"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/core/20-inject.js"
+    },
+    "catch": {
+     "name": "catch",
+     "types": [
+      "catch"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/core/25-catch.js"
+    },
+    "status": {
+     "name": "status",
+     "types": [
+      "status"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/core/25-status.js"
+    },
+    "debug": {
+     "name": "debug",
+     "types": [
+      "debug"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/core/58-debug.js"
+    },
+    "link": {
+     "name": "link",
+     "types": [
+      "link in",
+      "link out"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/core/60-link.js"
+    },
+    "exec": {
+     "name": "exec",
+     "types": [
+      "exec"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/core/75-exec.js"
+    },
+    "function": {
+     "name": "function",
+     "types": [
+      "function"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/core/80-function.js"
+    },
+    "template": {
+     "name": "template",
+     "types": [
+      "template"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/core/80-template.js"
+    },
+    "delay": {
+     "name": "delay",
+     "types": [
+      "delay"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/core/89-delay.js"
+    },
+    "trigger": {
+     "name": "trigger",
+     "types": [
+      "trigger"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/core/89-trigger.js"
+    },
+    "comment": {
+     "name": "comment",
+     "types": [
+      "comment"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/core/90-comment.js"
+    },
+    "unknown": {
+     "name": "unknown",
+     "types": [
+      "unknown"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/core/98-unknown.js"
+    },
+    "rpi-gpio": {
+     "name": "rpi-gpio",
+     "types": [
+      "rpi-gpio in",
+      "rpi-gpio out",
+      "rpi-mouse",
+      "rpi-keyboard"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/hardware/36-rpi-gpio.js"
+    },
+    "tls": {
+     "name": "tls",
+     "types": [
+      "tls-config"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/io/05-tls.js"
+    },
+    "mqtt": {
+     "name": "mqtt",
+     "types": [
+      "mqtt in",
+      "mqtt out",
+      "mqtt-broker"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/io/10-mqtt.js"
+    },
+    "httpin": {
+     "name": "httpin",
+     "types": [
+      "http in",
+      "http response"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/io/21-httpin.js"
+    },
+    "httprequest": {
+     "name": "httprequest",
+     "types": [
+      "http request"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/io/21-httprequest.js"
+    },
+    "websocket": {
+     "name": "websocket",
+     "types": [
+      "websocket in",
+      "websocket out",
+      "websocket-listener",
+      "websocket-client"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/io/22-websocket.js"
+    },
+    "watch": {
+     "name": "watch",
+     "types": [
+      "watch"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/io/23-watch.js"
+    },
+    "tcpin": {
+     "name": "tcpin",
+     "types": [
+      "tcp in",
+      "tcp out",
+      "tcp request"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/io/31-tcpin.js"
+    },
+    "udp": {
+     "name": "udp",
+     "types": [
+      "udp in",
+      "udp out"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/io/32-udp.js"
+    },
+    "switch": {
+     "name": "switch",
+     "types": [
+      "switch"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/logic/10-switch.js"
+    },
+    "change": {
+     "name": "change",
+     "types": [
+      "change"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/logic/15-change.js"
+    },
+    "range": {
+     "name": "range",
+     "types": [
+      "range"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/logic/16-range.js"
+    },
+    "split": {
+     "name": "split",
+     "types": [
+      "split",
+      "join"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/logic/17-split.js"
+    },
+    "sort": {
+     "name": "sort",
+     "types": [
+      "sort"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/logic/18-sort.js"
+    },
+    "batch": {
+     "name": "batch",
+     "types": [
+      "batch"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/logic/19-batch.js"
+    },
+    "CSV": {
+     "name": "CSV",
+     "types": [
+      "csv"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/parsers/70-CSV.js"
+    },
+    "HTML": {
+     "name": "HTML",
+     "types": [
+      "html"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/parsers/70-HTML.js"
+    },
+    "JSON": {
+     "name": "JSON",
+     "types": [
+      "json"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/parsers/70-JSON.js"
+    },
+    "XML": {
+     "name": "XML",
+     "types": [
+      "xml"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/parsers/70-XML.js"
+    },
+    "YAML": {
+     "name": "YAML",
+     "types": [
+      "yaml"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/parsers/70-YAML.js"
+    },
+    "tail": {
+     "name": "tail",
+     "types": [
+      "tail"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/storage/28-tail.js"
+    },
+    "file": {
+     "name": "file",
+     "types": [
+      "file",
+      "file in"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/.registry.npmjs.org/node-red/0.19.1/node_modules/node-red/nodes/core/storage/50-file.js"
+    }
+   }
+  },
+  "node-red-node-rbe": {
+   "name": "node-red-node-rbe",
+   "version": "0.2.3",
+   "local": false,
+   "nodes": {
+    "rbe": {
+     "name": "rbe",
+     "types": [
+      "rbe"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red-node-rbe",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/node-red-node-rbe/rbe.js"
+    }
+   }
+  },
+  "node-red-node-email": {
+   "name": "node-red-node-email",
+   "version": "0.1.29",
+   "local": false,
+   "nodes": {
+    "email": {
+     "name": "email",
+     "types": [
+      "e-mail",
+      "e-mail in"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red-node-email",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/node-red-node-email/61-email.js"
+    }
+   }
+  },
+  "node-red-node-feedparser": {
+   "name": "node-red-node-feedparser",
+   "version": "0.1.12",
+   "local": false,
+   "nodes": {
+    "feedparse": {
+     "name": "feedparse",
+     "types": [
+      "feedparse"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red-node-feedparser",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/node-red-node-feedparser/32-feedparse.js"
+    }
+   }
+  },
+  "node-red-node-twitter": {
+   "name": "node-red-node-twitter",
+   "version": "1.1.2",
+   "local": false,
+   "nodes": {
+    "twitter": {
+     "name": "twitter",
+     "types": [
+      "twitter-credentials",
+      "twitter in",
+      "twitter out"
+     ],
+     "enabled": true,
+     "local": false,
+     "module": "node-red-node-twitter",
+     "file": "/rbd/pnpm-volume/fef72d94-b404-4be7-a2e1-4319fb369ff6/node_modules/node-red-node-twitter/27-twitter.js"
+    }
+   }
+  },
+  "node-red-node-watson": {
+   "name": "node-red-node-watson",
+   "version": "0.7.3",
+   "local": true,
+   "nodes": {
+    "watson-conversation-v1": {
+     "name": "watson-conversation-v1",
+     "types": [
+      "watson-conversation-v1"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-node-watson",
+     "file": "/app/.node-red/node_modules/node-red-node-watson/services/conversation/v1.js"
+    },
+    "watson-conversation-workspace-manager-v1": {
+     "name": "watson-conversation-workspace-manager-v1",
+     "types": [
+      "watson-conversation-v1-workspace-manager"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-node-watson",
+     "file": "/app/.node-red/node_modules/node-red-node-watson/services/conversation/v1-workspace-manager.js"
+    },
+    "watson-discovery-v1": {
+     "name": "watson-discovery-v1",
+     "types": [
+      "watson-discovery-v1"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-node-watson",
+     "file": "/app/.node-red/node_modules/node-red-node-watson/services/discovery/v1.js"
+    },
+    "watson-discovery-v1-document-loader": {
+     "name": "watson-discovery-v1-document-loader",
+     "types": [
+      "watson-discovery-v1-document-loader"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-node-watson",
+     "file": "/app/.node-red/node_modules/node-red-node-watson/services/discovery/v1-document-loader.js"
+    },
+    "watson-discovery-v1-query-builder": {
+     "name": "watson-discovery-v1-query-builder",
+     "types": [
+      "watson-discovery-v1-query-builder"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-node-watson",
+     "file": "/app/.node-red/node_modules/node-red-node-watson/services/discovery/v1-query-builder.js"
+    },
+    "watson-language-translator-v3": {
+     "name": "watson-language-translator-v3",
+     "types": [
+      "watson-translator"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-node-watson",
+     "file": "/app/.node-red/node_modules/node-red-node-watson/services/language_translator/v3.js"
+    },
+    "watson-language-translator-identify-v3": {
+     "name": "watson-language-translator-identify-v3",
+     "types": [
+      "watson-language-translator-identify"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-node-watson",
+     "file": "/app/.node-red/node_modules/node-red-node-watson/services/language_translator_identify/v3.js"
+    },
+    "watson-language-translator-util-v3": {
+     "name": "watson-language-translator-util-v3",
+     "types": [
+      "watson-translator-util"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-node-watson",
+     "file": "/app/.node-red/node_modules/node-red-node-watson/services/language_translator_util/v3.js"
+    },
+    "watson-natural-language-classifier-v1": {
+     "name": "watson-natural-language-classifier-v1",
+     "types": [
+      "watson-natural-language-classifier"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-node-watson",
+     "file": "/app/.node-red/node_modules/node-red-node-watson/services/natural_language_classifier/v1.js"
+    },
+    "watson-natural-language-understanding-v1": {
+     "name": "watson-natural-language-understanding-v1",
+     "types": [
+      "natural-language-understanding"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-node-watson",
+     "file": "/app/.node-red/node_modules/node-red-node-watson/services/natural_language_understanding/v1.js"
+    },
+    "watson-personality-insights-v3": {
+     "name": "watson-personality-insights-v3",
+     "types": [
+      "watson-personality-insights-v3"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-node-watson",
+     "file": "/app/.node-red/node_modules/node-red-node-watson/services/personality_insights/v3.js"
+    },
+    "watson-speech-to-text-v1": {
+     "name": "watson-speech-to-text-v1",
+     "types": [
+      "watson-speech-to-text"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-node-watson",
+     "file": "/app/.node-red/node_modules/node-red-node-watson/services/speech_to_text/v1.js"
+    },
+    "watson-speech-to-text-corpus-builder-v1": {
+     "name": "watson-speech-to-text-corpus-builder-v1",
+     "types": [
+      "watson-speech-to-text-v1-query-builder"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-node-watson",
+     "file": "/app/.node-red/node_modules/node-red-node-watson/services/speech_to_text/v1-corpus-builder.js"
+    },
+    "watson-text-to-speech-v1": {
+     "name": "watson-text-to-speech-v1",
+     "types": [
+      "watson-text-to-speech"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-node-watson",
+     "file": "/app/.node-red/node_modules/node-red-node-watson/services/text_to_speech/v1.js"
+    },
+    "watson-text-to-speech-corpus-builder-v1": {
+     "name": "watson-text-to-speech-corpus-builder-v1",
+     "types": [
+      "watson-text-to-speech-v1-query-builder"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-node-watson",
+     "file": "/app/.node-red/node_modules/node-red-node-watson/services/text_to_speech/v1-corpus-builder.js"
+    },
+    "watson-tone-analyzer-v3": {
+     "name": "watson-tone-analyzer-v3",
+     "types": [
+      "watson-tone-analyzer-v3"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-node-watson",
+     "file": "/app/.node-red/node_modules/node-red-node-watson/services/tone_analyzer/v3.js"
+    },
+    "watson-visual-recognition-v3": {
+     "name": "watson-visual-recognition-v3",
+     "types": [
+      "visual-recognition-v3",
+      "visual-recognition-util-v3"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-node-watson",
+     "file": "/app/.node-red/node_modules/node-red-node-watson/services/visual_recognition/v3.js"
+    }
+   }
+  },
+  "node-red-contrib-discord": {
+   "name": "node-red-contrib-discord",
+   "version": "3.0.0",
+   "local": true,
+   "nodes": {
+    "discord-token": {
+     "name": "discord-token",
+     "types": [
+      "discord-token"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-contrib-discord",
+     "file": "/app/.node-red/node_modules/node-red-contrib-discord/discord/discord-token.js"
+    },
+    "discordMessage": {
+     "name": "discordMessage",
+     "types": [
+      "discordMessage"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-contrib-discord",
+     "file": "/app/.node-red/node_modules/node-red-contrib-discord/discord/discordMessage.js"
+    },
+    "discordSendMessage": {
+     "name": "discordSendMessage",
+     "types": [
+      "discordSendMessage"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-contrib-discord",
+     "file": "/app/.node-red/node_modules/node-red-contrib-discord/discord/discordSendMessage.js"
+    },
+    "discordClient": {
+     "name": "discordClient",
+     "types": [
+      "discordClient"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-contrib-discord",
+     "file": "/app/.node-red/node_modules/node-red-contrib-discord/discord/discordClient.js"
+    }
+   }
+  },
+  "node-red-contrib-telegrambot": {
+   "name": "node-red-contrib-telegrambot",
+   "version": "4.0.1",
+   "local": true,
+   "nodes": {
+    "telegrambot": {
+     "name": "telegrambot",
+     "types": [
+      "telegram bot",
+      "telegram receiver",
+      "telegram command",
+      "telegram event",
+      "telegram sender",
+      "telegram reply"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-contrib-telegrambot",
+     "file": "/app/.node-red/node_modules/node-red-contrib-telegrambot/telegrambot/99-telegrambot.js"
+    }
+   }
+  },
+  "node-red-contrib-google-action-dialogflow": {
+   "name": "node-red-contrib-google-action-dialogflow",
+   "version": "0.5.4",
+   "local": true,
+   "nodes": {
+    "google-action-dialogflow": {
+     "name": "google-action-dialogflow",
+     "types": [
+      "google-action-dialogflow in",
+      "google-action-dialogflow response"
+     ],
+     "enabled": true,
+     "local": true,
+     "module": "node-red-contrib-google-action-dialogflow",
+     "file": "/app/.node-red/node_modules/node-red-contrib-google-action-dialogflow/google-action-dialogflow.js"
+    }
+   }
+  }
+ },
+ "_credentialSecret": "f6196b02e4a10e9b5200d2371c55ead17abe392ccb264e738ceebd74bb11458a",
+ "users": {
+  "bbaaxx": {
+   "editor": {
+    "view": {
+     "view-grid-size": "20",
+     "view-node-status": true,
+     "view-show-tips": true,
+     "view-snap-grid": false,
+     "view-show-grid": false
+    }
+   },
+   "menu-menu-item-sidebar": false
+  }
+ },
+ "contextProviders": {}
+}
