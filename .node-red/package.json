@@ -1,0 +1,13 @@
+{
+    "name": "node-red-project",
+    "description": "A Node-RED Project",
+    "version": "0.0.1",
+    "dependencies": {
+        "node-red-contrib-apiai": "~1.1.2",
+        "node-red-contrib-chatbot": "~0.9.28",
+        "node-red-contrib-discord": "~3.0.0",
+        "node-red-contrib-google-action-dialogflow": "~0.5.4",
+        "node-red-contrib-telegrambot": "~4.0.1",
+        "node-red-node-watson": "~0.7.3"
+    }
+}
