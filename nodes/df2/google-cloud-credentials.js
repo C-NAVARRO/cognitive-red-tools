@@ -1,5 +1,5 @@
 const path = require("path");
-const fs = require("fs-extra");
+const fs = require("fs");
 
 const baseDir = path.resolve(
   process.env.GOOGLE_APPLICATION_CREDENTIALS_DIR || "./"
