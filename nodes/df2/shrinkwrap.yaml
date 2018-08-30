@@ -1,5 +1,6 @@
 dependencies:
   dialogflow: 0.6.0
+  fs-extra: 7.0.0
 packages:
   /@mrmlnc/readdir-enhanced/2.2.1:
     dependencies:
@@ -154,7 +155,7 @@ packages:
       integrity: sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
   /axios/0.18.0:
     dependencies:
-      follow-redirects: 1.5.5
+      follow-redirects: 1.5.7
       is-buffer: 1.1.6
     dev: false
     resolution:
@@ -513,14 +514,14 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-1USBHUKPmOsGpj3EAtJAPDKMOPc=
-  /follow-redirects/1.5.5:
+  /follow-redirects/1.5.7:
     dependencies:
       debug: 3.1.0
     dev: false
     engines:
       node: '>=4.0'
     resolution:
-      integrity: sha512-GHjtHDlY/ehslqv0Gr5N0PUJppgg/q0rOBvX0na1s7y1A3LWxPqCYU76s3Z1bM4+UZB4QF0usaXLT5wFpof5PA==
+      integrity: sha512-NONJVIFiX7Z8k2WxfqBjtwqMifx7X42ORLFrOZ2LTKGj71G3C0kfdyTqGqr8fx5zSX6Foo/D95dgGWbPUiwnew==
   /for-in/1.0.2:
     dev: false
     engines:
@@ -535,6 +536,16 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-QpD60n8T6Jvn8zeZxrxaCr//DRk=
+  /fs-extra/7.0.0:
+    dependencies:
+      graceful-fs: 4.1.11
+      jsonfile: 4.0.0
+      universalify: 0.1.2
+    dev: false
+    engines:
+      node: '>=6 <7 || >=8'
+    resolution:
+      integrity: sha512-EglNDLRpmaTWiD/qraZn6HREAEAHJcJOmxNEYwq6xeMKnVMAy3GUcFB+wXt2C6k4CNvB/mP1y/U3dzvKKj5OtQ==
   /fs.realpath/1.0.0:
     dev: false
     resolution:
@@ -641,6 +652,12 @@ packages:
       node: '>=4.0.0'
     resolution:
       integrity: sha512-ykdhaYDiU/jlyrkzZDPemraKwVIgLT31XMHVNSJW//R9VED56hqSDRMx1Jlxbf0O4iDZnBWQ0JQLHbM2r5+wuA==
+  /graceful-fs/4.1.11:
+    dev: false
+    engines:
+      node: '>=0.4.0'
+    resolution:
+      integrity: sha1-Dovf5NHduIVNZOBOp8AOKgJuVlg=
   /grpc/1.14.1:
     bundledDependencies:
       - node-pre-gyp
@@ -868,6 +885,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
+  /jsonfile/4.0.0:
+    dev: false
+    optionalDependencies:
+      graceful-fs: 4.1.11
+    resolution:
+      integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
   /jwa/1.1.6:
     dependencies:
       buffer-equal-constant-time: 1.0.1
@@ -1530,6 +1553,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-DaSsL3PP95JMgfpN4BjKViyisKc=
+  /universalify/0.1.2:
+    dev: false
+    engines:
+      node: '>= 4.0.0'
+    resolution:
+      integrity: sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
   /unset-value/1.0.0:
     dependencies:
       has-value: 0.3.1
@@ -1600,7 +1629,8 @@ packages:
     resolution:
       integrity: sha1-AwiOnr+edWtpdRYR0qXvWRSCyZU=
 registry: 'https://registry.npmjs.org/'
-shrinkwrapMinorVersion: 8
+shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   dialogflow: ^0.6.0
+  fs-extra: ^7.0.0
